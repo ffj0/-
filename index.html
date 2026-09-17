@@ -20,6 +20,27 @@
       border-radius: 12px;
     }
     img, video { display: block; margin: 0 auto; }
+    .question {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .question button {
+      margin: 0 10px;
+      padding: 10px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .question button:hover {
+      transform: scale(1.1);
+    }
+    .btn-yes { background: #ff4757; color: #fff; }
+    .btn-no { background: #dfe6e9; color: #2d3436; }
   </style>
 </head>
 <body>
@@ -51,6 +72,11 @@
   <img src="picture/111e6e7a4fe7c33f3f20ab53a71c1102.jpg" width="400">
   <p>祝他早日找到自己的真爱不要再压抑自己了。</p>
   <img src="picture/31e6a84c9716f19077e681c42ef62922.jpg" width="400">
+  <div class="question">
+    <p>🤔 你爱上这位神了没？</p>
+    <button class="btn-yes" onclick="alert('有品味！他值得 ❤️')">爱了 ❤️</button>
+    <button class="btn-no" onclick="alert('你确定？再往下翻翻 👀')">还没 😅</button>
+  </div>
 </div>
 </body>
 </html>
